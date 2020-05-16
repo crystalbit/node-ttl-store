@@ -1,11 +1,14 @@
 {
   "name": "ttl-store",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "In-memory database to store strings with TTL",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/",
     "test": "mocha tests/*"
+  },
+  "bin": {
+    "ttl-store": "./src/index.js"
   },
   "repository": {
     "type": "git",
