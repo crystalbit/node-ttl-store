@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 const cluster = require('cluster');
 const http = require('http');
 const port = process.env.PORT || 27027;
