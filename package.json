@@ -8,7 +8,8 @@
     "test": "mocha tests/*"
   },
   "bin": {
-    "ttl-store": "./src/index.js"
+    "ttl-store": "./src/index.js",
+    "node-ttl-store": "./src/index.js"
   },
   "repository": {
     "type": "git",
