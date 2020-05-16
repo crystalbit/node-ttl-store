@@ -1,0 +1,30 @@
+{
+  "name": "ttl-store",
+  "version": "1.0.0",
+  "description": "In-memory database to store strings with TTL",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/",
+    "test": "mocha tests/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crystalbit/node-ttl-store.git"
+  },
+  "keywords": [
+    "database",
+    "store",
+    "ttl"
+  ],
+  "author": "crystalbit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crystalbit/node-ttl-store/issues"
+  },
+  "homepage": "https://github.com/crystalbit/node-ttl-store#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.1.2"
+  }
+}
