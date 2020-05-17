@@ -15,6 +15,10 @@ if (cluster.isMaster && !inTest) {
     if (router[req.method]) router[req.method](req, res);
     else res.end('Invalid method');
   });
-  server.listen(port, '127.0.0.1', () => console.log(`TTL Store started at ${port} port`));
-  if (inTest) module.exports = server;
+  (module.exports.listen = () => {
+    return server.listening || server.listen(port, '127.0.0.1', () => !inTest && console.log(`TTL Store started at ${port} port`));
+  })();
+  if (inTest) module.exports.server = server;
 }
+
+if (inTest) module.exports.close = (callback = () => {}) => this.server.close(callback);

@@ -3,7 +3,7 @@ const getController = require('../controllers/get');
 const GET = (req, res) => {
   try {
     const url = req.url;
-    req.string = url.substring(1);
+    req.string = decodeURIComponent(url.substring(1));
     getController(req, res);
   } catch (err) {
     console.log(err)

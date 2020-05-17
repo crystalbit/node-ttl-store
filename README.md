@@ -15,3 +15,5 @@ npx ttl-store
 - backup providers/strategies
 - data validation
 - use and manage persistent connections
+- option for logging
+- maybe option for connecting the module as a mocked lib
