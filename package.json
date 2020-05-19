@@ -1,6 +1,6 @@
 {
   "name": "ttl-store",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "In-memory database to store strings with TTL",
   "main": "src/index.js",
   "scripts": {
@@ -43,5 +43,8 @@
       "html",
       "text"
     ]
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0"
   }
 }
